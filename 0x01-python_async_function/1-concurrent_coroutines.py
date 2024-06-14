@@ -2,6 +2,7 @@
 """executes multiple coroutines at the same time with async"""
 
 import asyncio
+import random
 from typing import List
 wait_random = __import__('wait_random').wait_random
 
