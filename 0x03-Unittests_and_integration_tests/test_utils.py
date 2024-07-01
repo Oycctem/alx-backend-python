@@ -8,7 +8,7 @@ from utils import access_nested_map, get_json, memoize
 
 class TestAccessNestedMap(unittest.TestCase):
     """ Tests for access_nested_map function """
-    
+
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
@@ -46,7 +46,7 @@ class TestGetJson(unittest.TestCase):
 
 class TestMemoize(unittest.TestCase):
     """ Tests for memoize function """
-    
+
     def test_memoize(self):
         """ Test memoize decorator works as expected """
         class TestClass:
